@@ -63,10 +63,11 @@ JOINTS_LABELS = {
 }
 
 
-MICE = ["1L", "1R"]
+MICE = ["none", "1L", "1R"]
 MICE_LABELS = {
-    "1L": "1",
-    "1R": "2",
+    "none": "1",
+    "1L": "2",
+    "1R": "3",
 }
 
 SIDES = ["R", "L"]
