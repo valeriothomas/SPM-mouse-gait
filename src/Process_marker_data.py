@@ -50,7 +50,7 @@ plt.close("all")
 # ============================================================================
 
 ACQUISITION_DATES = ["29_12_25", "05_01_26", "12_01_26"]
-MOUSE_NAMES = ["1L", "1R"]
+MOUSE_NAMES = ["none", "1L", "1R"]
 
 SAMPLING_RATE = 200  # Hz
 FILTER_CUTOFF = 20   # Hz
@@ -243,10 +243,11 @@ for date in ACQUISITION_DATES:
         plt.figure(figsize=(6, 4))
         plt.scatter(np.linspace(1,len(speed_dict[0]),len(speed_dict[0])), speed_dict[0], marker = '.')
         plt.scatter(np.linspace(1,len(speed_dict[1]),len(speed_dict[1])), speed_dict[1], marker = '*')
+        plt.scatter(np.linspace(1,len(speed_dict[2]),len(speed_dict[2])), speed_dict[2], marker = '+')
         plt.xlabel('Cycles number')
         plt.ylabel('Speed (m/s)')
         plt.title(f"Trotting speed over cycles ({side_label} Limb, Date = {date})")
-        #plt.legend(['Mouse_1', 'Mouse_2')
+        #plt.legend(['Mouse_1', 'Mouse_2', 'Mouse_3'])
         plt.show()
 
         return speed_dict
