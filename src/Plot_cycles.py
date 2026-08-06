@@ -17,7 +17,7 @@ cycle_total = []
 # -----------------------------------------------------------
 
 DATES = ["29_12_25", "05_01_26", "12_01_26"]
-MOUSE_NAMES = ["none", "1L", "1R"]
+MOUSE_NAMES = ["1L", "1R"]
 JOINTS = ["hip", "knee", "ankle", "abd"]
 
 SPEED_NORM = mpl.colors.Normalize(vmin=0.25, vmax=0.4)
